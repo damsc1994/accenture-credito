@@ -15,3 +15,4 @@ Paso 2. Para iniciar la base de datos deben ir al modulo prestamos-db y ejecutar
 Paso 3. Ejecuta el modulo prestamos-api con el comando npm start.
 Paso 4. Ejecutar la app prestamos-app con el comando npm start o ng serve --open 
 
+Nota: La configuración de la base de datos esta en el modulo prestamos-api en el archivo util.js
