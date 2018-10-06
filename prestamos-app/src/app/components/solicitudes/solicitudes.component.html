@@ -1,0 +1,27 @@
+<div>
+    <h3>{{titulo}}</h3>
+    <br>
+    <div class="col-lg-12">
+            <div class="alert alert-danger" role="alert"
+            *ngIf="status.result === 'error' || status.result === 'warning'">
+                {{ status.message }}
+           </div>
+            <app-identificacion (emitterIdentificacion)="listarSolicitudes($event)"></app-identificacion>
+    </div>
+    <div class="list-solicitudes col-lg-8" *ngIf="solicitudes && solicitudes.length > 0">
+        <div class="card" *ngFor="let item of solicitudes" >
+                <h5 class="card-header">{{item["cliente.nombre"] + ' ' + item["cliente.apellido"]}}</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Empresa: {{ item.empresa }}</h5>
+                    <div class="card-text">
+                        <p> Estado: {{item.aprobada ? 'Aprobada':'No Aprobado'}} </p>
+                        <p> Fecha de Solicitud: {{ getOptionDate(item.fechaSolicitud) }} </p>
+                        <p> Salario: {{ item.salario }} </p>
+                        <p *ngIf="item.aprobada"> 
+                            Valor Credito {{ item.valorCredito }}
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

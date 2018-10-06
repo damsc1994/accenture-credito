@@ -1,0 +1,23 @@
+{
+  "name": "prestamos-db",
+  "version": "1.0.0",
+  "description": "Modulo de configuracion y gestion de base de datos.",
+  "main": "index.js",
+  "scripts": {
+    "setup-dev-mac": "DEBUG=prestamos:* node setup.js",
+    "setup-dev-win": "set DEBUG=prestamos:* &  node setup.js ",
+    "setup": "node setup.js"
+  },
+  "keywords": [
+    "db"
+  ],
+  "author": "Damaso Salgado Cassiani",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^4.0.1",
+    "inquirer": "^6.2.0",
+    "sequelize": "^4.39.0",
+    "tedious": "^2.6.4"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "prestamos-api",
+  "version": "1.0.0",
+  "description": "api para registro de clientes y solicitud de prestamos",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "DEBUG=prestamos:* nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Damaso Salgado Cassiani",
+  "license": "ISC",
+  "devDependencies": {
+    "debug": "^4.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "express": "^4.16.3",
+    "express-asyncify": "^1.0.0",
+    "jwt-simple": "^0.5.5",
+    "moment": "^2.22.2",
+    "nodemon": "^1.18.4",
+    "prestamos-db": "file:../prestamos-db"
+  }
+}
