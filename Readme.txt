@@ -7,7 +7,7 @@ Angular 6
 /// Backend:
 Node
 Express
-MYSQL SERVER
+SQL SERVER
 
 
 Paso 1. Al descargar el proyectos deben ejecutar el comando npm install en cada modulo y en la app.
